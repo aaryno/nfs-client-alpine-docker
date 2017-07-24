@@ -34,4 +34,6 @@ if [ ! -d "$MOUNTPOINT" ]; then
 	mkdir -p ${MOUNTPOINT}
 fi
 
+rpcbind
+
 mount -t ${MOUNTFSTYPE} -o ${MOUNTOPTIONS} ${MOUNTTARGET} ${MOUNTPOINT}
